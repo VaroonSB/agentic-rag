@@ -1,6 +1,9 @@
-def main():
-    print("Hello from agentic-rag!")
+from dotenv import load_dotenv
 
+load_dotenv()
+
+from graph.graph import app
 
 if __name__ == "__main__":
-    main()
+    print("Hello Advanced RAG")
+    print(app.invoke(input={"question": "what is agent memory?"}))  # type: ignore
