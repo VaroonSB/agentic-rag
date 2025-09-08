@@ -29,3 +29,5 @@ logs/
 api.python.langchain.com/
 
 .hintrc
+
+.pytest_cache
